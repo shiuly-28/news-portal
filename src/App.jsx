@@ -7,6 +7,8 @@ import International from './page/International';
 import NewsDetails from './page/NewsDetails'; 
 import InternationalDetails from './page/InternationalDetails'; // ১. নিশ্চিত করুন এটি ইমপোর্ট করেছেন
 import Sports from './page/Sports';
+import Entertainment from './page/Entertainment';
+import Technology from './page/Technology';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/category/National" element={<National />} />
         <Route path="/category/International" element={<International />} />
         <Route path="/category/Sports" element={<Sports />} />
+        <Route path="/category/Entertainment" element={<Entertainment />} />
+        <Route path="/category/Technology" element={<Technology />} />
         
         {/* সাধারণ নিউজ রাউট */}
         <Route path="/news/:id" element={<NewsDetails />} />
