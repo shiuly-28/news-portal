@@ -1,56 +1,56 @@
 export const newsData = [
   {
     id: 1,
-    title: "ঢাকায় আধুনিক মেট্রোরেল নেটওয়ার্কের নতুন রুট উদ্বোধন",
+    title: "New Metro Rail Routes Inaugurated in Dhaka to Ease Urban Traffic",
     category: "National",
-    description: "শহরের যানজট কমাতে নতুন এই রুটটি গুরুত্বপূর্ণ ভূমিকা রাখবে বলে আশা করা হচ্ছে...",
-    content: "এখানে খবরের বিস্তারিত অংশ থাকবে। মেট্রোরেলের এই নতুন রুটটি রাজধানীর উত্তর থেকে দক্ষিণ প্রান্তকে আরও সহজভাবে সংযুক্ত করবে। আজ সকালে প্রধানমন্ত্রী এই রুটের আনুষ্ঠানিক উদ্বোধন করেন। উদ্বোধনী অনুষ্ঠানে তিনি বলেন, এটি স্মার্ট বাংলাদেশের দিকে আরও এক ধাপ অগ্রগতি।",
+    description: "The Prime Minister inaugurated a major expansion of the metro rail network today, aiming to significantly reduce commuting time across the capital city.",
+    content: "The newly inaugurated routes connect the northern and southern parts of Dhaka, providing a much-needed alternative to the city's congested roads. During the opening ceremony, officials highlighted that this expansion is expected to serve an additional 500,000 passengers daily. The project incorporates state-of-the-art safety features and solar-powered stations, marking a significant milestone in the country's vision for a 'Smart Bangladesh'. Residents have expressed immense relief as the travel time from Uttara to Motijheel is now reduced to just 35 minutes.",
     image: "https://picsum.photos/seed/metro/800/500",
-    date: "০২ জানুয়ারি ২০২৬"
+    date: "January 02, 2026"
   },
   {
     id: 2,
-    title: "বিপিএল ২০২৬: টানটান উত্তেজনায় জয় পেল ঢাকা",
+    title: "BPL 2026: Dhaka Dominates the Opener with a Thrilling Last-Ball Finish",
     category: "Sports",
-    description: "মিরপুর স্টেডিয়ামে আজ অবিশ্বাস্য এক ম্যাচ দেখলো দর্শকরা...",
-    content: "শেষ ওভারের নাটকীয়তায় ঢাকা ২ উইকেটে জয় ছিনিয়ে নেয়। অসাধারণ ব্যাটিং পারফরম্যান্স দেখিয়েছেন ঢাকার ওপেনাররা। এই জয়ের ফলে পয়েন্ট টেবিলে ঢাকা এখন সবার ওপরে। ম্যাচ শেষে সমর্থকদের উল্লাস ছিল চোখে পড়ার মতো।",
+    description: "A spectacular performance by the local players led Dhaka to a narrow victory in the opening match of the Bangladesh Premier League 2026.",
+    content: "In a packed Mirpur stadium, the match went down to the very last ball. Requiring 15 runs in the final over, Dhaka's middle-order batsman delivered two consecutive sixes to seal the win against Chittagong. The bowlers also played a crucial role, picking up key wickets during the powerplay. The captain praised the team's resilience and mental toughness under pressure. This victory sets a positive tone for Dhaka as they aim for their fourth BPL title this season. Fans are calling it one of the most exciting opening matches in the tournament's history.",
     image: "https://picsum.photos/seed/cricket/800/500",
-    date: "০১ জানুয়ারি ২০২৬"
+    date: "January 01, 2026"
   },
   {
     id: 3,
-    title: "নতুন বছরে কৃত্রিম বুদ্ধিমত্তার বড় পরিবর্তন আসছে",
+    title: "AI Revolution 2026: How Generative Intelligence is Transforming Jobs",
     category: "Technology",
-    description: "প্রযুক্তি বিশেষজ্ঞরা বলছেন ২০২৬ সাল হবে এআই-এর বিপ্লবের বছর...",
-    content: "কৃত্রিম বুদ্ধিমত্তা এখন আমাদের প্রাত্যহিক জীবনের অংশ। নতুন এই প্রযুক্তির মাধ্যমে চিকিৎসা ও শিক্ষা খাতে আমূল পরিবর্তন আসবে। বিশ্বের বড় বড় কোম্পানিগুলো এখন এআই গবেষণায় বিলিয়ন ডলার বিনিয়োগ করছে।",
+    description: "Global tech leaders predict that 2026 will be the year AI moves from experimental tools to core components of every major industry worldwide.",
+    content: "The landscape of employment is shifting rapidly as Artificial Intelligence becomes more integrated into daily workflows. From automated medical diagnostics to personalized education systems, AI is no longer a futuristic concept. Silicon Valley giants have announced massive investments in 'Ethical AI' to ensure that technology serves human interests without compromising privacy. Experts suggest that while some traditional roles are being automated, millions of new jobs are being created in AI management and data ethics. Bangladesh's IT sector is also gearing up to train 100,000 developers in advanced machine learning by the end of this year.",
     image: "https://picsum.photos/seed/tech/800/500",
-    date: "০২ জানুয়ারি ২০২৬"
+    date: "January 02, 2026"
   },
   {
     id: 4,
-    title: "বিশ্ব বাজারে জ্বালানি তেলের দাম কমার আভাস",
+    title: "Global Oil Prices Expected to Drop Amidst Supply Surge from OPEC+",
     category: "International",
-    description: "আন্তর্জাতিক বাজারে তেলের সরবরাহ বাড়ায় দাম কমার সম্ভাবনা দেখা দিয়েছে...",
-    content: "ওপেক প্লাস দেশগুলো তেলের উৎপাদন বাড়ানোর সিদ্ধান্ত নিয়েছে। এর ফলে বিশ্ববাজারে তেলের দাম কমতে শুরু করেছে। বিশেষজ্ঞরা মনে করছেন এর ফলে উন্নয়নশীল দেশগুলোর অর্থনীতিতে স্বস্তি ফিরবে।",
+    description: "International markets react positively as major oil-producing nations agree to increase output, potentially lowering energy costs for developing countries.",
+    content: "After months of high inflation and energy shortages, the global economy might finally see some relief. OPEC+ members have reached a consensus to gradually increase oil production starting next month. This decision comes after intense diplomatic negotiations aimed at stabilizing the global market. Financial analysts predict that a drop in fuel prices will lead to lower transportation costs, which in turn will reduce the price of essential commodities. For countries like Bangladesh, this could mean a significant reduction in the national import bill and a boost to the manufacturing sector.",
     image: "https://picsum.photos/seed/oil/800/500",
-    date: "০২ জানুয়ারি ২০২৬"
+    date: "January 02, 2026"
   },
   {
     id: 5,
-    title: "পরিবেশ রক্ষায় নতুন আইন পাস করলো সরকার",
+    title: "Government Passes Landmark Law to Ban Single-Use Plastics by 2027",
     category: "National",
-    description: "প্লাস্টিক দূষণ রোধে কঠোর ব্যবস্থার ঘোষণা দেওয়া হয়েছে...",
-    content: "নতুন আইন অনুযায়ী, একবার ব্যবহারযোগ্য প্লাস্টিক উৎপাদন ও বিপণন সম্পূর্ণ নিষিদ্ধ করা হয়েছে। আইন অমান্য করলে জেল ও জরিমানার বিধান রাখা হয়েছে। পরিবেশবাদীরা এই সিদ্ধান্তকে স্বাগত জানিয়েছেন।",
+    description: "In a bold move to protect the environment, the parliament has approved a strict law that prohibits the manufacture and sale of all single-use plastic products.",
+    content: "The Environmental Protection Act of 2026 marks the beginning of a new era for conservation in Bangladesh. The law outlines a phased approach to eliminate plastic bags, straws, and packaging materials over the next eighteen months. Violators will face heavy fines and potential imprisonment. The government has also announced subsidies for companies that switch to biodegradable alternatives like jute and paper. Environmentalists have hailed this as a 'historic victory' for the country's rivers and oceans, which have been severely impacted by plastic waste for decades.",
     image: "https://picsum.photos/seed/nature/800/500",
-    date: "০১ জানুয়ারি ২০২৬"
+    date: "January 01, 2026"
   },
   {
     id: 6,
-    title: "অস্কারের দৌড়ে এগিয়ে আছে বাংলাদেশের স্বল্পদৈর্ঘ্য চলচ্চিত্র",
+    title: "Bangladeshi Short Film Makes it to the Final Oscar Shortlist",
     category: "Entertainment",
-    description: "আন্তর্জাতিক উৎসবে প্রশংসিত হওয়ার পর এবার অস্কারের সংক্ষিপ্ত তালিকায় স্থান পেল চলচ্চিত্রটি...",
-    content: "বাংলাদেশের তরুণ নির্মাতার তৈরি এই চলচ্চিত্রটি ইতিমধ্যে কান ও বার্লিন চলচ্চিত্র উৎসবে পুরস্কার জিতেছে। এবার এটি অস্কারের বিদেশী ভাষার চলচ্চিত্র বিভাগে শক্তিশালী প্রতিদ্বন্দ্বী হিসেবে আবির্ভূত হয়েছে।",
+    description: "For the first time in history, a local short film has been shortlisted for the Academy Awards, bringing international glory to the country's cinema.",
+    content: "The film, titled 'Shadows of the Delta,' explores the lives of people living on the frontlines of climate change. After winning top honors at the Cannes and Berlin Film Festivals, it has now secured a spot among the final five contenders for the Best Live Action Short Film at the Oscars. The director, a young graduate from the national film institute, dedicated this achievement to the resilient communities of the coastal regions. This recognition is expected to open doors for more Bangladeshi creators on the global stage and has sparked a renewed interest in local storytelling.",
     image: "https://picsum.photos/seed/movie/800/500",
-    date: "০১ জানুয়ারি ২০২৬"
+    date: "January 01, 2026"
   }
 ];
