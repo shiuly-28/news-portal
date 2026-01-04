@@ -3,26 +3,25 @@ import { Link } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
   return (
-    <Link to={`/news/${news.id}`} className="group block bg-white border border-gray-100 rounded-sm hover:shadow-lg transition-all duration-300">
-      <div className="overflow-hidden">
+    <Link to={`/news/${news.id}`} className="group block mb-4">
+      <div className="overflow-hidden rounded-sm mb-3">
         <img 
           src={news.image} 
           alt={news.title} 
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
         />
       </div>
-      <div className="p-4">
-        <span className="text-red-700 text-xs font-bold uppercase tracking-wider">
-          {news.category}
-        </span>
-        <h3 className="text-lg font-bold mt-2 leading-tight group-hover:text-blue-600 transition-colors">
+      <div>
+        <h3 className="text-[17px] font-bold leading-[1.3] text-gray-900 group-hover:text-blue-700 transition-colors">
           {news.title}
         </h3>
-        <p className="text-gray-600 text-sm mt-3 line-clamp-2">
+        <p className="text-gray-500 text-sm mt-2 line-clamp-2 leading-relaxed">
           {news.description}
         </p>
-        <div className="mt-4 pt-4 border-t border-gray-50 text-xs text-gray-400 font-semibold">
-          {news.date}
+        <div className="mt-3 text-[11px] text-gray-400 font-bold uppercase flex items-center gap-2">
+          <span className="text-red-700">{news.category}</span>
+          <span>•</span>
+          <span>{news.date}</span>
         </div>
       </div>
     </Link>

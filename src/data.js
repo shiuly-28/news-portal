@@ -1,56 +1,146 @@
-export const newsData = [
+
+ export const newsData = [
   {
-    id: 1,
-    title: "New Metro Rail Routes Inaugurated in Dhaka to Ease Urban Traffic",
-    category: "National",
-    description: "The Prime Minister inaugurated a major expansion of the metro rail network today, aiming to significantly reduce commuting time across the capital city.",
-    content: "The newly inaugurated routes connect the northern and southern parts of Dhaka, providing a much-needed alternative to the city's congested roads. During the opening ceremony, officials highlighted that this expansion is expected to serve an additional 500,000 passengers daily. The project incorporates state-of-the-art safety features and solar-powered stations, marking a significant milestone in the country's vision for a 'Smart Bangladesh'. Residents have expressed immense relief as the travel time from Uttara to Motijheel is now reduced to just 35 minutes.",
-    image: "https://picsum.photos/seed/metro/800/500",
-    date: "January 02, 2026"
+    id: 12,
+    title: "না ফেরার দেশে কিংবদন্তি হাদি; দেশজুড়ে শোকের ছায়া",
+    category: "জাতীয়",
+    description: "দেশের বিশিষ্ট ব্যক্তিত্ব এবং তরুণ প্রজন্মের আইকন হাদি আজ ভোরে শেষ নিঃশ্বাস ত্যাগ করেছেন (ইন্না লিল্লাহি ওয়া ইন্না ইলাইহি রাজিউন)।",
+    content: "রাজধানীর একটি হাসপাতালে চিকিৎসাধীন অবস্থায় আজ সকাল ৬টায় হাদির মৃত্যু হয়। মৃত্যুকালে তার বয়স হয়েছিল মাত্র ৩২ বছর। পারিবারিক সূত্র জানিয়েছে, তিনি বেশ কিছুদিন ধরে ফুসফুসের জটিলতায় ভুগছিলেন। হাদির অকাল মৃত্যুতে শোক প্রকাশ করেছেন প্রধানমন্ত্রী ও রাষ্ট্রপতি। তার মরদেহ আজ বাদ জোহর জাতীয় ঈদগাহ মাঠে জানাজা শেষে বনানী কবরস্থানে দাফন করা হবে। হাদির মৃত্যুতে দেশের প্রযুক্তি ও সামাজিক অঙ্গনে এক অপূরণীয় ক্ষতি হয়ে গেল। তার বিদেহী আত্মার মাগফিরাত কামনায় আজ বিভিন্ন মসজিদে বিশেষ দোয়ার আয়োজন করা হয়েছে।",
+    image: "https://i.postimg.cc/rmBRCD9N/ae2596d6861a79517c924c73345eb316-693be8a5ea413.webp", // একটি শোকাতুর পরিবেশের ছবি
+    date: "০৪ জানুয়ারি, ২০২৬"
   },
   {
     id: 2,
-    title: "BPL 2026: Dhaka Dominates the Opener with a Thrilling Last-Ball Finish",
-    category: "Sports",
-    description: "A spectacular performance by the local players led Dhaka to a narrow victory in the opening match of the Bangladesh Premier League 2026.",
-    content: "In a packed Mirpur stadium, the match went down to the very last ball. Requiring 15 runs in the final over, Dhaka's middle-order batsman delivered two consecutive sixes to seal the win against Chittagong. The bowlers also played a crucial role, picking up key wickets during the powerplay. The captain praised the team's resilience and mental toughness under pressure. This victory sets a positive tone for Dhaka as they aim for their fourth BPL title this season. Fans are calling it one of the most exciting opening matches in the tournament's history.",
-    image: "https://picsum.photos/seed/cricket/800/500",
-    date: "January 01, 2026"
+    title: "বিপিএল ২০২৬: রুদ্ধশ্বাস শেষ বলে ঢাকার দুর্দান্ত জয়",
+    category: "খেলা",
+    description: "বাংলাদেশ প্রিমিয়ার লিগ ২০২৬-এর উদ্বোধনী ম্যাচে দেশীয় ক্রিকেটারদের দুর্দান্ত নৈপুণ্যে শেষ বলে নাটকীয় জয় পেয়েছে ঢাকা।",
+    content: "মিরপুরের ঠাসা গ্যালারিতে ম্যাচটি গড়িয়েছিল শেষ বল পর্যন্ত। শেষ ওভারে জয়ের জন্য ঢাকার প্রয়োজন ছিল ১৫ রান। শেষ মুহূর্তের নাটকীয়তায় মিডল অর্ডার ব্যাটসম্যানের টানা দুটি ছক্কা চট্টগ্রামের বিপক্ষে ঢাকার জয় নিশ্চিত করে। পাওয়ার প্লে চলাকালীন উইকেট তুলে নিয়ে জয়ের ভিত গড়ে দিয়েছিলেন বোলাররা। চাপের মুখে দলের খেলোয়াড়দের মানসিক দৃঢ়তার প্রশংসা করেছেন অধিনায়ক। এই জয় ঢাকা দলের চতুর্থ বিপিএল শিরোপা জয়ের পথকে আরও আত্মবিশ্বাসী করে তুলবে বলে মনে করছেন ভক্তরা।",
+    image: "https://i.postimg.cc/RVXVv3nY/56b18478-0272-4788-87f3-c844a4251531.jpg",
+    date: "০১ জানুয়ারি, ২০২৬"
   },
   {
     id: 3,
-    title: "AI Revolution 2026: How Generative Intelligence is Transforming Jobs",
-    category: "Technology",
-    description: "Global tech leaders predict that 2026 will be the year AI moves from experimental tools to core components of every major industry worldwide.",
-    content: "The landscape of employment is shifting rapidly as Artificial Intelligence becomes more integrated into daily workflows. From automated medical diagnostics to personalized education systems, AI is no longer a futuristic concept. Silicon Valley giants have announced massive investments in 'Ethical AI' to ensure that technology serves human interests without compromising privacy. Experts suggest that while some traditional roles are being automated, millions of new jobs are being created in AI management and data ethics. Bangladesh's IT sector is also gearing up to train 100,000 developers in advanced machine learning by the end of this year.",
-    image: "https://picsum.photos/seed/tech/800/500",
-    date: "January 02, 2026"
+    title: "এআই বিপ্লব ২০২৬: যেভাবে পাল্টাচ্ছে কর্মক্ষেত্রের রূপরেখা",
+    category: "প্রযুক্তি",
+    description: "বিশ্বের প্রযুক্তিবিদরা মনে করছেন, ২০২৬ সাল হবে কৃত্রিম বুদ্ধিমত্তা বা এআই-এর মূলধারার শিল্পে রূপান্তরের বছর।",
+    content: "দৈনন্দিন কর্মপ্রবাহে কৃত্রিম বুদ্ধিমত্তার ব্যবহার বেড়ে যাওয়ায় কর্মসংস্থানের চিত্র দ্রুত পরিবর্তন হচ্ছে। স্বয়ংক্রিয় চিকিৎসা সেবা থেকে শুরু করে ব্যক্তিগত শিক্ষাব্যবস্থা—সবখানেই এখন এআই-এর ছোঁয়া। সিলিকন ভ্যালির টেক জায়ান্টরা গোপনীয়তা বজায় রেখে প্রযুক্তির সর্বোচ্চ ব্যবহার নিশ্চিত করতে 'এথিক্যাল এআই' খাতে বিশাল বিনিয়োগ ঘোষণা করেছে। বিশেষজ্ঞরা বলছেন, প্রচলিত কিছু কাজ স্বয়ংক্রিয় হয়ে গেলেও এআই ব্যবস্থাপনা ও ডেটা এথিক্স খাতে লাখ লাখ নতুন কর্মসংস্থান সৃষ্টি হচ্ছে। বাংলাদেশও এই বছরের শেষ নাগাদ ১ লাখ ডেভেলপারকে উন্নত মেশিন লার্নিং প্রশিক্ষণ দেওয়ার প্রস্তুতি নিচ্ছে।",
+    image: "https://i.postimg.cc/C1qz1FV9/teach-20260101174736.jpg",
+    date: "০২ জানুয়ারি, ২০২৬"
   },
   {
     id: 4,
-    title: "Global Oil Prices Expected to Drop Amidst Supply Surge from OPEC+",
-    category: "International",
-    description: "International markets react positively as major oil-producing nations agree to increase output, potentially lowering energy costs for developing countries.",
-    content: "After months of high inflation and energy shortages, the global economy might finally see some relief. OPEC+ members have reached a consensus to gradually increase oil production starting next month. This decision comes after intense diplomatic negotiations aimed at stabilizing the global market. Financial analysts predict that a drop in fuel prices will lead to lower transportation costs, which in turn will reduce the price of essential commodities. For countries like Bangladesh, this could mean a significant reduction in the national import bill and a boost to the manufacturing sector.",
-    image: "https://picsum.photos/seed/oil/800/500",
-    date: "January 02, 2026"
+    title: "বিশ্ববাজারে তেলের দাম কমার আভাস, স্বস্তিতে আমদানিকারক দেশগুলো",
+    category: "আন্তর্জাতিক",
+    description: "ওপেক প্লাস (OPEC+) তেলের উৎপাদন বাড়ানোর সিদ্ধান্ত নেওয়ায় বিশ্ববাজারে ইতিবাচক প্রভাব পড়েছে, যা উন্নয়নশীল দেশগুলোর জন্য স্বস্তির খবর।",
+    content: "দীর্ঘদিন ধরে চলা উচ্চ মুদ্রাস্ফীতি এবং জ্বালানি সংকটের পর অবশেষে বিশ্ব অর্থনীতি কিছুটা স্বস্তির দেখা পেতে যাচ্ছে। ওপেক প্লাস সদস্যরা আগামী মাস থেকে ধাপে ধাপে তেল উৎপাদন বাড়াতে সম্মত হয়েছে। দীর্ঘ কূটনৈতিক আলোচনার পর বাজার স্থিতিশীল করতেই এই সিদ্ধান্ত নেওয়া হয়েছে। বিশ্লেষকরা মনে করছেন, তেলের দাম কমলে পরিবহন খরচ কমবে, ফলে নিত্যপ্রয়োজনীয় পণ্যের দামও কমে আসবে। বাংলাদেশের মতো আমদানিনির্ভর দেশগুলোর জন্য এটি আমদানিব্যয় হ্রাস এবং উৎপাদন খাতকে শক্তিশালী করার বড় সুযোগ।",
+    image: "https://i.postimg.cc/FzhN4mFk/11-2501060758.jpg",
+    date: "০২ জানুয়ারি, ২০২৬"
   },
   {
     id: 5,
-    title: "Government Passes Landmark Law to Ban Single-Use Plastics by 2027",
-    category: "National",
-    description: "In a bold move to protect the environment, the parliament has approved a strict law that prohibits the manufacture and sale of all single-use plastic products.",
-    content: "The Environmental Protection Act of 2026 marks the beginning of a new era for conservation in Bangladesh. The law outlines a phased approach to eliminate plastic bags, straws, and packaging materials over the next eighteen months. Violators will face heavy fines and potential imprisonment. The government has also announced subsidies for companies that switch to biodegradable alternatives like jute and paper. Environmentalists have hailed this as a 'historic victory' for the country's rivers and oceans, which have been severely impacted by plastic waste for decades.",
+    title: "২০২৭ সালের মধ্যে ওয়ান-টাইম প্লাস্টিক নিষিদ্ধ করে আইন পাস",
+    category: "জাতীয়",
+    description: "পরিবেশ রক্ষায় সরকার এক যুগান্তকারী পদক্ষেপ নিয়েছে। সংসদ এখন থেকে একবার ব্যবহারযোগ্য প্লাস্টিক পণ্য উৎপাদন ও বিক্রি নিষিদ্ধ ঘোষণা করে আইন পাস করেছে।",
+    content: "২০২৬ সালের পরিবেশ সুরক্ষা আইন বাংলাদেশের জন্য একটি নতুন যুগের সূচনা করেছে। আগামী ১৮ মাসের মধ্যে পর্যায়ক্রমে প্লাস্টিক ব্যাগ, স্ট্র এবং মোড়কজাত সামগ্রী বাজার থেকে সরিয়ে নেওয়ার পরিকল্পনা করা হয়েছে। আইন অমান্যকারীদের বড় অংকের জরিমানা এবং কারাদণ্ডের বিধান রাখা হয়েছে। বিকল্প হিসেবে পাট ও কাগজের পণ্য তৈরিতে উৎসাহিত করতে সরকার ভর্তুকি প্রদানের ঘোষণা দিয়েছে। পরিবেশবাদীরা একে নদী ও সমুদ্রের জীববৈচিত্র্য রক্ষার ঐতিহাসিক বিজয় হিসেবে অভিহিত করেছেন।",
     image: "https://picsum.photos/seed/nature/800/500",
-    date: "January 01, 2026"
+    date: "০১ জানুয়ারি, ২০২৬"
   },
+
+ 
   {
     id: 6,
-    title: "Bangladeshi Short Film Makes it to the Final Oscar Shortlist",
-    category: "Entertainment",
-    description: "For the first time in history, a local short film has been shortlisted for the Academy Awards, bringing international glory to the country's cinema.",
-    content: "The film, titled 'Shadows of the Delta,' explores the lives of people living on the frontlines of climate change. After winning top honors at the Cannes and Berlin Film Festivals, it has now secured a spot among the final five contenders for the Best Live Action Short Film at the Oscars. The director, a young graduate from the national film institute, dedicated this achievement to the resilient communities of the coastal regions. This recognition is expected to open doors for more Bangladeshi creators on the global stage and has sparked a renewed interest in local storytelling.",
+    title: "অস্কারের চূড়ান্ত তালিকায় বাংলাদেশের স্বল্পদৈর্ঘ্য চলচ্চিত্র",
+    category: "বিনোদন",
+    description: "ইতিহাসে প্রথমবারের মতো কোনো স্থানীয় স্বল্পদৈর্ঘ্য চলচ্চিত্র একাডেমি অ্যাওয়ার্ডের (অস্কার) সংক্ষিপ্ত তালিকায় জায়গা করে নিয়েছে, যা দেশের সিনেমার জন্য আন্তর্জাতিক গৌরব বয়ে এনেছে।",
+    content: "'শ্যাডোস অফ দ্য ডেল্টা' শিরোনামের এই চলচ্চিত্রটি জলবায়ু পরিবর্তনের প্রভাবে ক্ষতিগ্রস্ত উপকূলীয় মানুষের জীবন নিয়ে নির্মিত। কান এবং বার্লিন চলচ্চিত্র উৎসবে শ্রেষ্ঠত্বের পুরস্কার জেতার পর, এটি এখন অস্কারের 'বেস্ট লাইভ অ্যাকশন শর্ট ফিল্ম' বিভাগে শেষ পাঁচ প্রতিদ্বন্দ্বীর মধ্যে জায়গা করে নিয়েছে। জাতীয় চলচ্চিত্র ইনস্টিটিউটের একজন তরুণ স্নাতক এই ছবির পরিচালক। তিনি এই অর্জন উপকূলীয় অঞ্চলের লড়াকু মানুষদের উৎসর্গ করেছেন। এই স্বীকৃতি বিশ্বমঞ্চে বাংলাদেশি নির্মাতাদের জন্য নতুন দুয়ার খুলে দেবে বলে আশা করা হচ্ছে।",
     image: "https://picsum.photos/seed/movie/800/500",
-    date: "January 01, 2026"
-  }
+    date: "০১ জানুয়ারি, ২০২৬"
+  },
+  {
+    id: 7,
+    title: "বঙ্গোপসাগরে নতুন গ্যাসক্ষেত্রের সন্ধান, জ্বালানি খাতে আশার আলো",
+    category: "জাতীয়",
+    description: "পেট্রোবাংলা বঙ্গোপসাগরের গভীর সমুদ্রে একটি বিশাল নতুন গ্যাসক্ষেত্রের সন্ধান পেয়েছে, যা দেশের জ্বালানি সংকট মোকাবিলায় বড় ভূমিকা রাখবে।",
+    content: "প্রাথমিক জরিপ অনুযায়ী, এই গ্যাসক্ষেত্রে প্রায় ২ ট্রিলিয়ন ঘনফুট গ্যাসের মজুত থাকতে পারে। বিশেষজ্ঞরা বলছেন, এখান থেকে গ্যাস উত্তোলন শুরু হলে আমদানিনির্ভরতা উল্লেখযোগ্য হারে কমবে। সরকার দ্রুত খনন কাজ শুরু করার জন্য আন্তর্জাতিক কোম্পানিগুলোর সাথে আলোচনা শুরু করেছে। এই আবিষ্কার শিল্পকারখানার নিরবচ্ছিন্ন বিদ্যুৎ সরবরাহ নিশ্চিত করতে সহায়ক হবে।",
+    image: "https://picsum.photos/seed/gas/800/500",
+    date: "০৩ জানুয়ারি, ২০২৬"
+  },
+  {
+    id: 8,
+    title: "ফ্রিল্যান্সারদের জন্য বিশেষ কার্ড স্কিম চালু করল বাংলাদেশ ব্যাংক",
+    category: "অর্থনীতি",
+    description: "দেশের ফ্রিল্যান্সারদের ব্যাংকিং সুবিধা সহজ করতে এবং বিদেশ থেকে অর্জিত আয় দ্রুত আনার জন্য একটি বিশেষ কার্ড সেবা চালু করা হয়েছে।",
+    content: "এই কার্ডের মাধ্যমে ফ্রিল্যান্সাররা কোনো ঝামেলা ছাড়াই সরাসরি ডলার এন্ডোর্স করতে পারবেন এবং আন্তর্জাতিক অনলাইন কেনাকাটা করতে পারবেন। আইসিটি প্রতিমন্ত্রী জানান, এই উদ্যোগের ফলে ফ্রিল্যান্সাররা প্রাতিষ্ঠানিক স্বীকৃতি পাবেন এবং ব্যাংক থেকে ঋণ নেওয়া তাদের জন্য সহজ হবে। বর্তমানে বাংলাদেশে প্রায় ৬ লাখ সক্রিয় ফ্রিল্যান্সার কাজ করছেন।",
+    image: "https://i.postimg.cc/vm9sxDcf/image-193832.jpg",
+    date: "০৩ জানুয়ারি, ২০২৬"
+  },
+  {
+    id: 9,
+    title: "শিক্ষাপ্রতিষ্ঠানে এআই শিক্ষা বাধ্যতামূলক করার পরিকল্পনা",
+    category: "শিক্ষা",
+    description: "আগামী শিক্ষাবর্ষ থেকে মাধ্যমিক স্তরের পাঠ্যক্রমে কৃত্রিম বুদ্ধিমত্তা বা এআই বিষয়টি অন্তর্ভুক্ত করার সিদ্ধান্ত নিয়েছে শিক্ষা মন্ত্রণালয়।",
+    content: "চতুর্থ শিল্প বিপ্লবের চ্যালেঞ্জ মোকাবিলায় শিক্ষার্থীদের দক্ষ করে গড়ে তোলাই এই পরিকল্পনার মূল লক্ষ্য। কোডিং, ডেটা সায়েন্স এবং এআই-এর প্রাথমিক বিষয়গুলো এখানে পড়ানো হবে। শিক্ষকদের প্রশিক্ষণের জন্য সারাদেশে বিশেষ আইসিটি ক্যাম্প স্থাপনের কাজ শুরু হয়েছে। সরকার মনে করছে, এর ফলে ভবিষ্যৎ প্রজন্ম বিশ্ববাজারের প্রতিযোগিতায় টিকে থাকতে পারবে।",
+    image: "https://picsum.photos/seed/education/800/500",
+    date: "০২ জানুয়ারি, ২০২৬"
+  },
+  {
+    id: 10,
+    title: "ফেসবুক ও ইনস্টাগ্রামের সার্ভারে বড় ধরনের বিপর্যয়, ভোগান্তিতে কোটি ব্যবহারকারী",
+    category: "প্রযুক্তি",
+    description: "কারিগরি ত্রুটির কারণে বিশ্বজুড়ে মেটার মালিকানাধীন সামাজিক যোগাযোগমাধ্যমগুলোর সেবা কয়েক ঘণ্টা বন্ধ ছিল।",
+    content: "গতকাল রাত ১০টার পর থেকে হঠাৎ করে ব্যবহারকারীরা লগইন সমস্যায় পড়েন। মেটা এক বিবৃতিতে জানায়, তাদের প্রধান সার্ভারে আপডেটের সময় এই ত্রুটি দেখা দেয়। প্রায় ৩ ঘণ্টা পর সেবা স্বাভাবিক হতে শুরু করে। এর ফলে অনলাইন ব্যবসা এবং যোগাযোগে বড় ধরনের বিঘ্ন ঘটে। সাইবার নিরাপত্তা বিশেষজ্ঞরা একে সাম্প্রতিক সময়ের অন্যতম বড় 'আউটেজ' হিসেবে দেখছেন।",
+    image: "https://picsum.photos/seed/meta/800/500",
+    date: "০৩ জানুয়ারি, ২০২৬"
+  },
+  {
+    id: 11,
+    title: "শৈত্যপ্রবাহে কাঁপছে দেশ; পঞ্চগড়ে তাপমাত্রা নামল ৫ ডিগ্রিতে",
+    category: "জাতীয়",
+    description: "দেশজুড়ে জেঁকে বসেছে তীব্র শীত। উত্তরাঞ্চলের জেলাগুলোতে মাঝারি ধরনের শৈত্যপ্রবাহ বইছে, যা আরও কয়েকদিন স্থায়ী হতে পারে।",
+    content: "ঘন কুয়াশার কারণে সড়ক ও নৌপথে যান চলাচল ব্যাহত হচ্ছে। আবহাওয়া অফিস জানিয়েছে, পঞ্চগড়ের তেঁতুলিয়ায় আজ দেশের সর্বনিম্ন তাপমাত্রা রেকর্ড করা হয়েছে ৫.২ ডিগ্রি সেলসিয়াস। তীব্র শীতে বিপাকে পড়েছেন নিম্ন আয়ের মানুষ। সরকারি ও বেসরকারি উদ্যোগে শীতবস্ত্র বিতরণ শুরু হলেও চাহিদার তুলনায় তা অপ্রতুল। হাসপাতালগুলোতে বাড়ছে শীতজনিত রোগে আক্রান্ত রোগীর সংখ্যা।",
+    image: "https://picsum.photos/seed/winter/800/500",
+    date: "০৪ জানুয়ারি, ২০২৬"
+  },
+
+    {
+        id: "n-2",
+        category: "অর্থনীতি",
+        title: "রেকর্ড রেমিট্যান্স: এক মাসেই প্রবাসীরা পাঠালেন ২.৫ বিলিয়ন ডলার",
+        description: "নতুন বছরের শুরুতেই প্রবাসী আয়ে বড় ধরনের উত্থান লক্ষ করা গেছে। ব্যাংকিং চ্যানেলে বৈধভাবে রেমিট্যান্স পাঠানোর হার বৃদ্ধি পাওয়ায় দেশের বৈদেশিক মুদ্রার রিজার্ভে ইতিবাচক প্রভাব পড়ছে।",
+        image: "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=500",
+        date: "৩০ মিনিট আগে"
+    },
+    {
+        id: "n-3",
+        category: "খেলা",
+        title: "বিপিএল ২০২৬: তামিম ও হৃদয়ের ঝোড়ো ব্যাটে বড় জয় পেল বরিশাল",
+        description: "বিপিএলের আজকের হাইভোল্টেজ ম্যাচে ফরচুন বরিশাল বিশাল ব্যবধানে জয়ী হয়েছে। তামিম ইকবালের ফিফটি এবং তাওহীদ হৃদয়ের বিধ্বংসী ব্যাটিংয়ে দিশেহারা ছিল প্রতিপক্ষ বোলাররা।",
+        image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500",
+        date: "১ ঘণ্টা আগে"
+    },
+    {
+        id: "n-4",
+        category: "আন্তর্জাতিক",
+        title: "মধ্যপ্রাচ্যে শান্তি ফেরাতে জাতিসংঘের জরুরি বৈঠক আজ",
+        description: "গাজা ও লেবানন সীমান্তে ক্রমবর্ধমান উত্তেজনা কমাতে নিরাপত্তা পরিষদ এক জরুরি বৈঠকের আহ্বান জানিয়েছে। বিশ্বনেতারা এই অঞ্চলে শান্তি বজায় রাখার তাগিদ দিয়েছেন।",
+        image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=500",
+        date: "২ ঘণ্টা আগে"
+    },
+   
+    {
+        id: "n-7",
+        category: "শিক্ষা",
+        title: "সারাদেশে নতুন বই উৎসব: শিক্ষার্থীদের হাতে পৌঁছেছে নতুন বই",
+        description: "বছরের প্রথম দিনে আনন্দঘন পরিবেশে সারাদেশে বই উৎসব পালিত হয়েছে। প্রাথমিক ও মাধ্যমিক স্তরের কয়েক কোটি শিক্ষার্থী নতুন বইয়ের ঘ্রাণে মাতোয়ারা।",
+        image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=500",
+        date: "৫ ঘণ্টা আগে"
+    },
+    {
+        id: "n-8",
+        category: "জীবনযাপন",
+        title: "শীতের সকালে সাজেক ভ্যালিতে পর্যটকের উপচে পড়া ভিড়",
+        description: "পাহাড়ের চূড়ায় মেঘের লুকোচুরি দেখতে সাজেক এখন পর্যটকদের প্রধান গন্তব্য। রিসোর্টগুলোতে তিল ধারণের ঠাঁই নেই, পর্যটনের নতুন রেকর্ড সৃষ্টি হচ্ছে।",
+        image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=500",
+        date: "৬ ঘণ্টা আগে"
+    }
 ];
