@@ -63,7 +63,7 @@ const Navbar = () => {
             <div className="relative">
               <div className="absolute -top-5 left-1/2 -translate-x-1/2 text-orange-500 text-xl animate-bounce">☀️</div>
               <h1 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tighter transition-transform group-hover:scale-105">
-                প্রথম <span className="text-red-700">নিউজ</span>
+                দেশ <span className="text-red-700">দিগন্ত</span>
               </h1>
             </div>
             <div className="h-1 w-full bg-red-700 mt-1 rounded-full"></div>
