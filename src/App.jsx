@@ -9,6 +9,7 @@ import InternationalDetails from './page/InternationalDetails';
 import Sports from './page/Sports';
 import Entertainment from './page/Entertainment';
 import Technology from './page/Technology';
+import SearchPage from './SearchPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
   <Route path="/category/Sports" element={<Sports />} />
   <Route path="/category/Entertainment" element={<Entertainment />} />
   <Route path="/category/Technology" element={<Technology />} />
+  <Route path="/search" element={<SearchPage />} />
   
   {/* সমস্যা সৃষ্টিকারী এই লাইনটি সাময়িকভাবে মুছে দিন অথবা নিউজ রাউটের অনেক নিচে রাখুন */}
   {/* <Route path="/category/:categoryName" element={<Home />} /> */}
