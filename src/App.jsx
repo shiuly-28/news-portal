@@ -10,6 +10,7 @@ import Sports from './page/Sports';
 import Entertainment from './page/Entertainment';
 import Technology from './page/Technology';
 import SearchPage from './SearchPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
   {/* সবশেষে এটি রাখুন */}
   {/* <Route path="*" element={<Home />} /> */}
 </Routes>
+<Footer></Footer>
     </Router>
+    
   );
 }
 
