@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGlobe, FaRegClock, FaChevronRight } from 'react-icons/fa';
-// ১. Link ইমপোর্ট করা হয়েছে
 import { Link } from 'react-router-dom';
 
 const internationalNews = [
@@ -85,7 +84,35 @@ const internationalNews = [
     }
 ];
 
+// --- Skeleton Loader Component ---
+const SkeletonItem = () => (
+    <div className="animate-pulse grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b pb-12">
+        <div className="lg:col-span-8">
+            <div className="bg-gray-200 h-[450px] w-full rounded-lg mb-4"></div>
+            <div className="h-10 bg-gray-200 rounded w-3/4 mb-3"></div>
+            <div className="h-4 bg-gray-200 rounded w-full mb-2"></div>
+            <div className="h-4 bg-gray-200 rounded w-5/6 mb-4"></div>
+            <div className="h-4 bg-gray-200 rounded w-1/4"></div>
+        </div>
+        <div className="lg:col-span-4 bg-gray-50 p-6 rounded-xl h-[300px]">
+            <div className="h-6 bg-gray-200 rounded w-1/2 mb-4"></div>
+            <div className="space-y-4">
+                <div className="h-4 bg-gray-200 rounded w-full"></div>
+                <div className="h-4 bg-gray-200 rounded w-full"></div>
+                <div className="h-4 bg-gray-200 rounded w-full"></div>
+            </div>
+        </div>
+    </div>
+);
+
 export default function International() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setIsLoading(false), 1500); // ১.৫ সেকেন্ড লোডিং দেখাবে
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className="bg-white min-h-screen font-serif">
             <div className="container mx-auto px-4 py-4 border-b-2 border-red-600 mb-8 flex items-center gap-2">
@@ -94,64 +121,67 @@ export default function International() {
             </div>
 
             <main className="container mx-auto px-4 space-y-16">
-                {internationalNews.map((news) => (
-                    <div key={news.id} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b pb-12 last:border-0">
-                        
-                        <div className="lg:col-span-8 group">
-                            {/* ২. ইমেজের সাথে লিংক কানেক্ট করা হয়েছে */}
-                            <Link to={`/international-news/${news.id}`}>
-                                <motion.div 
-                                    whileHover={{ scale: 1.01 }}
-                                    className="overflow-hidden rounded-lg mb-4 cursor-pointer"
-                                >
-                                    <img 
-                                        src={news.imageUrl} 
-                                        alt={news.title}
-                                        className="w-full h-[450px] object-cover"
-                                    />
-                                </motion.div>
-                            </Link>
-
-                            {/* ৩. টাইটেলের সাথে লিংক কানেক্ট করা হয়েছে */}
-                            <Link to={`/international-news/${news.id}`}>
-                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 hover:text-blue-700 cursor-pointer mb-3 leading-snug">
-                                    {news.title}
-                                </h2>
-                            </Link>
-
-                            <p className="text-gray-600 text-lg mb-4 line-clamp-3">
-                                {news.summary}
-                            </p>
-                            <div className="flex items-center text-gray-400 text-sm gap-4">
-                                <span className="flex items-center gap-1 font-bold text-red-600">
-                                    <FaRegClock /> {news.time}
-                                </span>
-                            </div>
-                        </div>
-
-                        <div className="lg:col-span-4 bg-gray-50 p-6 rounded-xl">
-                            <h3 className="text-lg font-bold border-b pb-3 mb-4 text-gray-800 flex items-center justify-between">
-                                সংশ্লিষ্ট খবর 
-                                <FaChevronRight className="text-xs text-red-600" />
-                            </h3>
-                            <ul className="space-y-4">
-                                {news.relatedLinks.map((link, i) => (
-                                    <li key={i} className="flex gap-3 group cursor-pointer border-b border-gray-200 pb-3 last:border-0">
-                                        <div className="min-w-[4px] h-4 bg-red-600 mt-1"></div>
-                                        <p className="text-[16px] font-semibold text-gray-700 group-hover:text-blue-600 transition-colors leading-tight">
-                                            {link}
-                                        </p>
-                                    </li>
-                                ))}
-                            </ul>
+                {isLoading ? (
+                    // লোডিং অবস্থায় ৩টি স্কেলিটন দেখাবে
+                    [1, 2, 3].map((item) => <SkeletonItem key={item} />)
+                ) : (
+                    internationalNews.map((news) => (
+                        <div key={news.id} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b pb-12 last:border-0">
                             
-                            <div className="mt-8 p-4 bg-blue-100 rounded-lg text-center">
-                                <p className="text-xs text-blue-800 font-bold uppercase tracking-widest">Sponsored</p>
-                                <p className="text-sm font-bold mt-1">বিশ্বের সবচেয়ে দামি শহরগুলোর তালিকায় ঢাকা কত নম্বরে?</p>
+                            <div className="lg:col-span-8 group">
+                                <Link to={`/international-news/${news.id}`}>
+                                    <motion.div 
+                                        whileHover={{ scale: 1.01 }}
+                                        className="overflow-hidden rounded-lg mb-4 cursor-pointer"
+                                    >
+                                        <img 
+                                            src={news.imageUrl} 
+                                            alt={news.title}
+                                            className="w-full h-[450px] object-cover"
+                                        />
+                                    </motion.div>
+                                </Link>
+
+                                <Link to={`/international-news/${news.id}`}>
+                                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 hover:text-blue-700 cursor-pointer mb-3 leading-snug">
+                                        {news.title}
+                                    </h2>
+                                </Link>
+
+                                <p className="text-gray-600 text-lg mb-4 line-clamp-3">
+                                    {news.summary}
+                                </p>
+                                <div className="flex items-center text-gray-400 text-sm gap-4">
+                                    <span className="flex items-center gap-1 font-bold text-red-600">
+                                        <FaRegClock /> {news.time}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="lg:col-span-4 bg-gray-50 p-6 rounded-xl">
+                                <h3 className="text-lg font-bold border-b pb-3 mb-4 text-gray-800 flex items-center justify-between">
+                                    সংশ্লিষ্ট খবর 
+                                    <FaChevronRight className="text-xs text-red-600" />
+                                </h3>
+                                <ul className="space-y-4">
+                                    {news.relatedLinks.map((link, i) => (
+                                        <li key={i} className="flex gap-3 group cursor-pointer border-b border-gray-200 pb-3 last:border-0">
+                                            <div className="min-w-[4px] h-4 bg-red-600 mt-1"></div>
+                                            <p className="text-[16px] font-semibold text-gray-700 group-hover:text-blue-600 transition-colors leading-tight">
+                                                {link}
+                                            </p>
+                                        </li>
+                                    ))}
+                                </ul>
+                                
+                                <div className="mt-8 p-4 bg-blue-100 rounded-lg text-center">
+                                    <p className="text-xs text-blue-800 font-bold uppercase tracking-widest">Sponsored</p>
+                                    <p className="text-sm font-bold mt-1">বিশ্বের সবচেয়ে দামি শহরগুলোর তালিকায় ঢাকা কত নম্বরে?</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))
+                )}
             </main>
         </div>
     );
