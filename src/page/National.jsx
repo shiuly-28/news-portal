@@ -46,6 +46,48 @@ const National = () => {
         img: "https://images.unsplash.com/photo-1624314138470-5a2f24623f10?q=80&w=300&h=200&fit=crop",
         summary: "গত ২৪ ঘণ্টায় টোল আদায় হয়েছে ৩ কোটি টাকার বেশি।" 
     },
+    { 
+        id: "nat-07", 
+        title: "দেশের সব হাসপাতালে ডেঙ্গু কর্নার খোলার নির্দেশ", 
+        time: "৯ ঘণ্টা আগে", 
+        img: "https://images.unsplash.com/photo-1584483766114-2cea6facdf57?q=80&w=300&h=200&fit=crop",
+        summary: "ডেঙ্গু আক্রান্ত রোগীর সংখ্যা বাড়তে থাকায় স্বাস্থ্য অধিদপ্তর থেকে এই বিশেষ নির্দেশনা দেওয়া হয়েছে।" 
+    },
+    { 
+        id: "nat-08", 
+        title: "সাভারে চামড়া শিল্প নগরীতে কেন্দ্রীয় বর্জ্য শোধনাগার চালুর উদ্যোগ", 
+        time: "১০ ঘণ্টা আগে", 
+        img: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=300&h=200&fit=crop",
+        summary: "পরিবেশ দূষণ রোধে ট্যানারি মালিকদের বিসিকের নতুন শর্ত পালনের নির্দেশ দেওয়া হয়েছে।" 
+    },
+    { 
+        id: "nat-09", 
+        title: "বিপিএল ২০২৬: সিলেট স্ট্রাইকার্সের দাপুটে জয়ে পয়েন্ট টেবিলে রদবদল", 
+        time: "১১ ঘণ্টা আগে", 
+        img: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=300&h=200&fit=crop",
+        summary: "মাশরাফির সিলেটের বোলিং তোপে অল্প রানেই গুটিয়ে গেল প্রতিপক্ষ।" 
+    },
+    { 
+        id: "nat-10", 
+        title: "বঙ্গোপসাগরে নতুন তেল ও গ্যাস অনুসন্ধানে বিদেশি বিনিয়োগের আহ্বান", 
+        time: "১২ ঘণ্টা আগে", 
+        img: "https://images.unsplash.com/photo-1525498128493-380d1990a112?q=80&w=300&h=200&fit=crop",
+        summary: "জ্বালানি নিরাপত্তা নিশ্চিত করতে ব্লু-ইকোনমি জোনে অনুসন্ধানের গতি বাড়াচ্ছে সরকার।" 
+    },
+    { 
+        id: "nat-11", 
+        title: "৫জি সেবার পরিধি বাড়াতে আরও ৫টি মোবাইল টাওয়ার স্থাপনের কাজ শুরু", 
+        time: "১৩ ঘণ্টা আগে", 
+        img: "https://images.unsplash.com/photo-1520333789090-1afc82db536a?q=80&w=300&h=200&fit=crop",
+        summary: "বিটিআরসি জানিয়েছে, চলতি বছরের শেষ নাগাদ বড় শহরগুলোতে হাই-স্পিড ৫জি পাওয়া যাবে।" 
+    },
+    { 
+        id: "nat-12", 
+        title: "চট্টগ্রাম বন্দরে কন্টেইনার জট কমাতে স্বয়ংক্রিয় স্ক্যানার বসানো হচ্ছে", 
+        time: "১৪ ঘণ্টা আগে", 
+        img: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=300&h=200&fit=crop",
+        summary: "আমদানি-রপ্তানি কার্যক্রম দ্রুত করতে কাস্টমস হাউসে নতুন উন্নত প্রযুক্তি যোগ করা হচ্ছে।" 
+    }
   ];
 
   return (
@@ -76,36 +118,83 @@ const National = () => {
         </div>
 
         {/* কলাম ২: মাঝখানের লিড নিউজ (জাতীয় প্রেক্ষাপট) */}
-        <div className="lg:col-span-6 lg:border-r border-gray-200 px-2">
-          <div className="cursor-pointer group">
-            <div className="w-full aspect-video overflow-hidden mb-4 rounded-sm">
-              <img 
-                src="https://i.postimg.cc/J4KdTd7b/inq-graphics-20230311194450.jpg" 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                alt="National Main" 
-              />
-            </div>
-            <h1 className="text-3xl font-extrabold leading-tight group-hover:text-blue-700 transition-colors">
-              ডিজিটাল বাংলাদেশ থেকে ‘স্মার্ট বাংলাদেশ’ গড়ার প্রত্যয়
-            </h1>
-            <p className="text-gray-600 mt-3 text-lg leading-relaxed">
-              ২০৪১ সালের মধ্যে উন্নত ও সমৃদ্ধ রাষ্ট্র বিনির্মাণে তথ্যপ্রযুক্তি খাতের আধুনিকায়নে গুরুত্ব দিচ্ছে সরকার। দেশের প্রতিটি গ্রামকে আধুনিক সুযোগ-সুবিধার আওতায় আনা হচ্ছে...
-            </p>
-            <span className="text-sm text-gray-400 mt-4 block border-b pb-6">৩ ঘণ্টা আগে</span>
-          </div>
+        <div className="lg:col-span-6 lg:border-r border-gray-200 px-4">
+  {/* ১. লিড নিউজ (সবচেয়ে বড়) */}
+  <div className="cursor-pointer group">
+    <div className="w-full aspect-video overflow-hidden mb-4 rounded-sm">
+      <img 
+        src="https://i.postimg.cc/J4KdTd7b/inq-graphics-20230311194450.jpg" 
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+        alt="National Main" 
+      />
+    </div>
+    <h1 className="text-3xl font-extrabold leading-tight group-hover:text-blue-700 transition-colors">
+      ডিজিটাল বাংলাদেশ থেকে ‘স্মার্ট বাংলাদেশ’ গড়ার প্রত্যয়
+    </h1>
+    <p className="text-gray-600 mt-3 text-lg leading-relaxed">
+      ২০৪১ সালের মধ্যে উন্নত ও সমৃদ্ধ রাষ্ট্র বিনির্মাণে তথ্যপ্রযুক্তি খাতের আধুনিকায়নে গুরুত্ব দিচ্ছে সরকার। দেশের প্রতিটি গ্রামকে আধুনিক সুযোগ-সুবিধার আওতায় আনা হচ্ছে...
+    </p>
+    <span className="text-sm text-gray-400 mt-4 block border-b pb-6">৩ ঘণ্টা আগে</span>
+  </div>
 
-          {/* নিচের ২ কলামের গ্রিড (জাতীয় ইস্যু) */}
-          <div className="grid grid-cols-2 gap-6 mt-6">
-              <div className="group cursor-pointer">
-                <img src="https://i.postimg.cc/YCh8dryT/88ffa84d18b6ad15b5dadfb2251352495fecb1bce5faab95.jpg" className="w-full h-32 object-cover mb-2" alt="sub" />
-                <h4 className="font-bold text-sm group-hover:text-blue-700">জ্বালানি তেলের দাম আরও কমার সম্ভাবনা</h4>
-              </div>
-              <div className="group cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=400&h=250&fit=crop" className="w-full h-32 object-cover mb-2" alt="sub" />
-                <h4 className="font-bold text-sm group-hover:text-blue-700">পাবলিক পরিবহনে ই-টিকেটিং সেবা জনপ্রিয় হচ্ছে</h4>
-              </div>
-          </div>
-        </div>
+  {/* ২. মাঝারি গ্রিড (২টি কার্ড) */}
+  <div className="grid grid-cols-2 gap-6 mt-6 pb-6 border-b border-gray-100">
+    <div className="group cursor-pointer">
+      <img src="https://i.postimg.cc/YCh8dryT/88ffa84d18b6ad15b5dadfb2251352495fecb1bce5faab95.jpg" className="w-full h-32 object-cover mb-3 rounded-sm shadow-sm" alt="sub" />
+      <h4 className="font-bold text-[16px] leading-snug group-hover:text-blue-700">জ্বালানি তেলের দাম আরও কমার সম্ভাবনা</h4>
+    </div>
+    <div className="group cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=400&h=250&fit=crop" className="w-full h-32 object-cover mb-3 rounded-sm shadow-sm" alt="sub" />
+      <h4 className="font-bold text-[16px] leading-snug group-hover:text-blue-700">পাবলিক পরিবহনে ই-টিকেটিং সেবা জনপ্রিয় হচ্ছে</h4>
+    </div>
+  </div>
+
+  {/* ৩. নতুন গ্রিড (আরও ৪টি ছোট কার্ড) */}
+  <div className="grid grid-cols-2 gap-x-6 gap-y-8 mt-6">
+    <div className="flex gap-3 group cursor-pointer">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://i.postimg.cc/Dz7gLMzC/image-329680.jpg" className="w-full h-full object-cover rounded" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700">মেট্রোরেলের নতুন রুট উদ্বোধন হতে যাচ্ছে খুব শীঘ্রই</h4>
+    </div>
+    
+    <div className="flex gap-3 group cursor-pointer">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://images.unsplash.com/photo-1584483766114-2cea6facdf57?w=200" className="w-full h-full object-cover rounded" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700">সারাদেশে ডেঙ্গু প্রতিরোধে বিশেষ অভিযান শুরু</h4>
+    </div>
+
+    <div className="flex gap-3 group cursor-pointer">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://i.postimg.cc/zD44KqYJ/walton-20240320205853.jpg" className="w-full h-full object-cover rounded" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700">বাজারে আসছে সাশ্রয়ী মূল্যের নতুন স্মার্টফোন</h4>
+    </div>
+
+    <div className="flex gap-3 group cursor-pointer">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=200" className="w-full h-full object-cover rounded" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700">প্রাথমিক বিদ্যালয়ে নতুন পাঠ্যক্রম চালু হচ্ছে</h4>
+    </div>
+  </div>
+
+  {/* ৪. একদম নিচে একটি টেক্সট লিস্ট (বর্ডারসহ) */}
+  <div className="mt-10 pt-6 border-t-2 border-gray-900">
+    <div className="flex flex-col divide-y divide-gray-100">
+      {[
+        "কক্সবাজার সমুদ্র সৈকতে পর্যটকদের উপচে পড়া ভিড়",
+        "রমজানে নিত্যপণ্যের দাম নিয়ন্ত্রণে টাস্কফোর্স গঠন",
+        "নতুন বছরে দেশের রপ্তানি আয়ে ১০ শতাংশ প্রবৃদ্ধি"
+      ].map((list, i) => (
+        <h4 key={i} className="py-3 font-bold text-gray-800 hover:text-blue-700 cursor-pointer flex items-center gap-2">
+          <span className="w-1.5 h-1.5 bg-red-600 rounded-full"></span> {list}
+        </h4>
+      ))}
+    </div>
+  </div>
+</div>
 
         {/* কলাম ৩: ডান পাশের সাইডবার (জাতীয় সর্বশেষ আপডেট) */}
         <div className="lg:col-span-3 space-y-6">

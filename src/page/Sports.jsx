@@ -69,36 +69,92 @@ const Sports = () => {
         </div>
 
         {/* কলাম ২: মাঝখানের লিড নিউজ */}
-        <div className="lg:col-span-6 lg:border-r border-gray-200 px-2">
-          <div className="cursor-pointer group">
-            <div className="w-full aspect-video overflow-hidden mb-4 rounded-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=800&h=450&fit=crop" 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                alt="Main" 
-              />
-            </div>
-            <h1 className="text-3xl font-extrabold leading-tight group-hover:text-blue-700 transition-colors">
-              আগের ম্যাচের ‘খলনায়ক’ মাহমুদউল্লাহ এবার নায়ক
-            </h1>
-            <p className="text-gray-600 mt-3 text-lg leading-relaxed">
-              শেষ ৫ ওভারে জয়ের জন্য ৪৭ রান দরকার হয় রংপুর রাইডার্সের। ঠিক তখনই উইকেটে এসে ঝড় তুললেন মাহমুদউল্লাহ...
-            </p>
-            <span className="text-sm text-gray-400 mt-4 block border-b pb-6">৩ ঘণ্টা আগে</span>
-          </div>
+       <div className="lg:col-span-6 lg:border-r border-gray-200 px-4">
+  {/* ১. মেইন বড় নিউজ (লিড) */}
+  <div className="cursor-pointer group">
+    <div className="w-full aspect-video overflow-hidden mb-4 rounded-sm">
+      <img 
+        src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=800&h=450&fit=crop" 
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+        alt="Main" 
+      />
+    </div>
+    <h1 className="text-3xl font-extrabold leading-tight group-hover:text-blue-700 transition-colors">
+      আগের ম্যাচের ‘খলনায়ক’ মাহমুদউল্লাহ এবার নায়ক
+    </h1>
+    <p className="text-gray-600 mt-3 text-lg leading-relaxed">
+      শেষ ৫ ওভারে জয়ের জন্য ৪৭ রান দরকার হয় রংপুর রাইডার্সের। ঠিক তখনই উইকেটে এসে ঝড় তুললেন মাহমুদউল্লাহ...
+    </p>
+    <span className="text-sm text-gray-400 mt-4 block border-b pb-6">৩ ঘণ্টা আগে</span>
+  </div>
 
-          {/* মাঝখানের নিচের ২ কলামের ছোট গ্রিড (প্রথম আলোর স্টাইল) */}
-          <div className="grid grid-cols-2 gap-6 mt-6">
-             <div className="group cursor-pointer">
-                <img src="https://i.postimg.cc/23NWDHXX/47157197215172188192221464285212008768505184n.jpg" className="w-full h-32 object-cover mb-2" alt="sub" />
-                <h4 className="font-bold text-sm group-hover:text-blue-700">বাংলাদেশ ফুটবল লিগ: মোহামেডান জয়ী</h4>
-             </div>
-             <div className="group cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=400&h=250&fit=crop" className="w-full h-32 object-cover mb-2" alt="sub" />
-                <h4 className="font-bold text-sm group-hover:text-blue-700">দুই ছক্কা মেশিন ও ৬ পেসার নিয়ে দক্ষিণ আফ্রিকা</h4>
-             </div>
-          </div>
-        </div>
+  {/* ২. মাঝখানের ২ কলামের মাঝারি কার্ড (২টি বড় খবর) */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 pb-6 border-b border-gray-100">
+    <div className="group cursor-pointer">
+      <img 
+        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=400&h=250&fit=crop" 
+        className="w-full h-36 object-cover mb-3 rounded-sm" 
+        alt="sub" 
+      />
+      <h4 className="font-bold text-[17px] leading-snug group-hover:text-blue-700 transition-colors">
+        বিপিএল ২০২৬: সাকিবের অলরাউন্ড নৈপুণ্যে ফরচুন বরিশালের বড় জয়
+      </h4>
+    </div>
+    <div className="group cursor-pointer">
+      <img 
+        src="https://images.unsplash.com/photo-1512719994953-eabf50895df7?q=80&w=400&h=250&fit=crop" 
+        className="w-full h-36 object-cover mb-3 rounded-sm" 
+        alt="sub" 
+      />
+      <h4 className="font-bold text-[17px] leading-snug group-hover:text-blue-700 transition-colors">
+        তামিমের সেঞ্চুরি মিস, আফসোস নিয়ে ফিরলেন ড্রেসিংরুমে
+      </h4>
+    </div>
+  </div>
+
+  {/* ৩. নিচে ছোট থাম্বনেইল গ্রিড (আরও ৪টি খবর) */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mt-6">
+    {/* কার্ড ১ */}
+    <div className="flex gap-4 group cursor-pointer items-start">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://i.postimg.cc/k4KKHNDg/bd-F-team-deshrupantor.jpg" className="w-full h-full object-cover rounded shadow-sm" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700 transition-colors">
+        জাতীয় দলে ডাক পেলেন ৫ নতুন মুখ, বাদ পড়লেন অভিজ্ঞরা
+      </h4>
+    </div>
+    
+    {/* কার্ড ২ */}
+    <div className="flex gap-4 group cursor-pointer items-start">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=200" className="w-full h-full object-cover rounded shadow-sm" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700 transition-colors">
+        বিশ্বকাপ বাছাইপর্ব: আর্জেন্টিনার বড় জয়, ড্র করল ব্রাজিল
+      </h4>
+    </div>
+
+    {/* কার্ড ৩ */}
+    <div className="flex gap-4 group cursor-pointer items-start">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=200" className="w-full h-full object-cover rounded shadow-sm" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700 transition-colors">
+        চ্যাম্পিয়ন্স লিগ: শেষ মুহূর্তের গোলে বার্সেলোনার নাটকীয় জয়
+      </h4>
+    </div>
+
+    {/* কার্ড ৪ */}
+    <div className="flex gap-4 group cursor-pointer items-start">
+      <div className="w-24 h-20 flex-shrink-0">
+        <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?w=200" className="w-full h-full object-cover rounded shadow-sm" alt="thumb" />
+      </div>
+      <h4 className="font-bold text-sm leading-tight group-hover:text-blue-700 transition-colors">
+        পিএসজি ছেড়ে নতুন ক্লাবে যোগ দিচ্ছেন এমবাপ্পে?
+      </h4>
+    </div>
+  </div>
+</div>
 
         {/* কলাম ৩: ডান পাশের সাইডবার */}
         <div className="lg:col-span-3 space-y-6">
